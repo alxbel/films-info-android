@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Nice Films Info</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="title_films_by_year">Films By Year</string>
+    <string name="title_films_by_year_results">Search Results</string>
+    <string name="title_film_details"></string>
+
+    <string name="about">
+        <font size="35" color="#536eb9"><b>T</b></font>his app shows info about\n all the good films
+        that have been shot in the history of cinema.\n
+        \nThe information is gathered from:\n
+        • <b><font color="#A3A300">IMDB</font></b>\n
+        • <b><font color="#A32100">RottenTomatoes</font></b>\n
+        • <b>Metacritic</b>\n\n
+        All you need is to choose year and minimum allowable IMDB rating.
+    </string>
+
+    <string name="filmsByYearDesc">
+        <font size="35" color="#536eb9"><b>S</b></font>pecify <i>genre, year</i> and a <i>minimum</i> IMDB rating for films which you wish to find.
+    </string>
+
+    <string name="button_ok">Ok</string>
+
+    <string-array name="genres_array">
+        <item>*ANY* genre</item>
+        <item>Animation</item>
+        <item>Drama</item>
+        <item>Action</item>
+        <item>Horror</item>
+        <item>Thriller</item>
+        <item>Crime</item>
+        <item>Comedy</item>
+        <item>Sci-Fi</item>
+        <item>Fantasy</item>
+        <item>Adventure</item>
+        <item>Romance</item>
+        <item>Mystery</item>
+        <item>War</item>
+        <item>Western</item>
+        <item>Film-Noir</item>
+        <item>Musical</item>
+        <item>Documentary</item>
+        <item>History</item>
+        <item>Biography</item>
+        <item>Sport</item>
+    </string-array>
+
+    <string-array name="ratings_array">
+        <item>7.0</item>
+        <item>7.5</item>
+        <item>8.0</item>
+        <item>8.5</item>
+        <item>9.0</item>
+        <item>9.5</item>
+        <item>10.0</item>
+    </string-array>
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="info.nice_films.androidclient" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="info.nice_films.androidclient.CategoriesActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="info.nice_films.androidclient.AboutActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation"/>
+        <activity
+            android:name="info.nice_films.androidclient.FilmsByYearActivity"
+            android:label="@string/title_films_by_year"
+            android:parentActivityName="info.nice_films.androidclient.CategoriesActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="info.nice_films.androidclient.CategoriesActivity"/>
+        </activity>
+        <activity
+            android:name="info.nice_films.androidclient.FilmsByYearResultsActivity"
+            android:label="@string/title_films_by_year_results"
+            android:parentActivityName="info.nice_films.androidclient.FilmsByYearActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="info.nice_films.androidclient.FilmsByYearActivity" />
+        </activity>
+    </application>
+
+</manifest>
