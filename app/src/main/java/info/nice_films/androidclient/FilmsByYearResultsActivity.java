@@ -202,7 +202,7 @@ public class FilmsByYearResultsActivity extends AppCompatActivity {
                     return null;
                 }
 
-                String request = DEBUG_REQUEST;
+                String request = SEARCH_REQUEST;
                 URL url = new URL(host + request);
 
                 conn = (HttpURLConnection) url.openConnection();
