@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FilmsByYearResultsActivity">
+    tools:context=".nicefilms.android.scenarios.search.FilmsByYearResultsActivity">
 
     <LinearLayout
         android:id="@+id/layout_film_details_container"

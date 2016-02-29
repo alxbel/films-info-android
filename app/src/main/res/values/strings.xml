@@ -7,13 +7,13 @@
     <string name="title_film_details"></string>
 
     <string name="about">
-        <font size="35" color="#536eb9"><b>T</b></font>his app shows info about\n all the good films
+        <font size="35" color="#536eb9"><b>T</b></font>his app shows info about\n any good films
         that have been shot in the history of cinema.\n
         \nThe information is gathered from:\n
         • <b><font color="#A3A300">IMDB</font></b>\n
         • <b><font color="#A32100">RottenTomatoes</font></b>\n
         • <b>Metacritic</b>\n\n
-        All you need is to choose year and minimum allowable IMDB rating.
+        You need to choose year and minimum allowable IMDB rating.
     </string>
 
     <string name="filmsByYearDesc">

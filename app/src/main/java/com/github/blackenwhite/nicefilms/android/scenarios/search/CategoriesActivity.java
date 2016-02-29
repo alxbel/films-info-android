@@ -1,4 +1,4 @@
-package info.nice_films.androidclient;
+package com.github.blackenwhite.nicefilms.android.scenarios.search;
 
 import android.content.Intent;
 import android.graphics.Color;
@@ -8,6 +8,9 @@ import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+
+import com.github.blackenwhite.R;
+import com.github.blackenwhite.nicefilms.android.scenarios.about.AboutActivity;
 
 public class CategoriesActivity extends AppCompatActivity implements View.OnTouchListener {
 

@@ -1,4 +1,4 @@
-package info.nice_films.androidclient;
+package com.github.blackenwhite.nicefilms.android.scenarios.about;
 
 import android.graphics.Color;
 import android.graphics.PorterDuff;
@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
+
+import com.github.blackenwhite.R;
 
 public class AboutActivity extends AppCompatActivity {
 

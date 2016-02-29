@@ -1,4 +1,4 @@
-package info.nice_films.androidclient;
+package com.github.blackenwhite.nicefilms.android.scenarios.search;
 
 import android.content.Context;
 import android.content.Intent;
@@ -21,6 +21,8 @@ import android.view.inputmethod.EditorInfo;
 import android.widget.TextView;
 import android.view.KeyEvent;
 import android.widget.Toast;
+
+import com.github.blackenwhite.R;
 
 import java.util.Calendar;
 import java.util.GregorianCalendar;

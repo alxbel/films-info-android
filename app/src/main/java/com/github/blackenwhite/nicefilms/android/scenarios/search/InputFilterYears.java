@@ -1,4 +1,4 @@
-package info.nice_films.androidclient;
+package com.github.blackenwhite.nicefilms.android.scenarios.search;
 
 import android.text.InputFilter;
 import android.text.Spanned;

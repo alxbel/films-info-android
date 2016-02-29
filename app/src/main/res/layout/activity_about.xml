@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/back_light_cyan"
-    tools:context=".AboutActivity">
+    tools:context=".nicefilms.android.scenarios.about.AboutActivity">
 
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"

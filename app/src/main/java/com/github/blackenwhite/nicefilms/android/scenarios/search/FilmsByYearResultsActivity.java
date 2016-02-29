@@ -1,4 +1,4 @@
-package info.nice_films.androidclient;
+package com.github.blackenwhite.nicefilms.android.scenarios.search;
 
 import android.content.Context;
 import android.content.Intent;
@@ -26,6 +26,10 @@ import android.widget.PopupWindow;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.github.blackenwhite.R;
+import com.github.blackenwhite.nicefilms.android.model.Film;
+import com.github.blackenwhite.nicefilms.android.constants.Constants;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -41,7 +45,6 @@ import java.net.HttpURLConnection;
 import java.net.Socket;
 import java.net.URL;
 import java.net.UnknownHostException;
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -51,12 +54,12 @@ import java.util.Map;
 public class FilmsByYearResultsActivity extends AppCompatActivity {
     private final String LOG_TAG = FilmsByYearResultsActivity.class.getSimpleName();
 
-    private static final String LOCALHOST_EMULATOR = "http://10.0.2.2:8080/MovServer";
-    private static final String LOCALHOST_REAL_DEVICE = "http://192.168.1.34:8080/MovServer";
-    private static final String INTERNET_HOST = "http://www.nice-films.info";
-    private static final String SEARCH_REQUEST = "/search";
-    private static final String DEBUG_REQUEST = "/debug";
-    private static final String SRV_ERROR_REQUEST = "/error";
+//    private static final String LOCALHOST_EMULATOR = "http://10.0.2.2:8080/MovServer";
+//    private static final String LOCALHOST_REAL_DEVICE = "http://192.168.1.34:8080/MovServer";
+//    private static final String INTERNET_HOST = "https://nicefilms-lexblacken.rhcloud.com";
+//    private static final String SEARCH_REQUEST = "/search";
+//    private static final String DEBUG_REQUEST = "/debug";
+//    private static final String SRV_ERROR_REQUEST = "/error";
 
     private Context context;
     private RelativeLayout root;
@@ -196,13 +199,14 @@ public class FilmsByYearResultsActivity extends AppCompatActivity {
             BufferedReader reader = null;
 
             try {
-                String host = LOCALHOST_REAL_DEVICE;
+                String host = Constants.LOCALHOST_REAL_DEVICE;
+                host = Constants.INTERNET_HOST;
                 isServerAvailable = isHostAvailable(host);
                 if (!isServerAvailable) {
                     return null;
                 }
 
-                String request = SEARCH_REQUEST;
+                String request = Constants.SEARCH_REQUEST;
                 URL url = new URL(host + request);
 
                 conn = (HttpURLConnection) url.openConnection();
@@ -347,7 +351,7 @@ public class FilmsByYearResultsActivity extends AppCompatActivity {
 
         private boolean isHostAvailable(String host) {
             Socket socket = null;
-            host = host.replaceAll("http://|www.|:8080/MovServer", "");
+            host = host.replaceAll("http://|https://|www.|:8080/MovServer", "");
             Log.d(LOG_TAG, "checking " + host);
             try {
                 int port = 80;

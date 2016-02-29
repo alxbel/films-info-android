@@ -1,12 +1,10 @@
-package info.nice_films.androidclient;
+package com.github.blackenwhite.nicefilms.android.model;
 
 import android.support.annotation.NonNull;
-import android.util.Log;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
