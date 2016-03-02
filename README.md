@@ -1,4 +1,7 @@
 # Android client for nice-films.info
+## Hosts  
+www.nice-films.info  
+https://nicefilms-lexblacken.rhcloud.com/  
 ## Description  
 This app shows info about any good films that have been shot in the history of cinema.
 The information is gathered from:  
