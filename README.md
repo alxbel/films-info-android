@@ -1,4 +1,4 @@
-# Android client for nice-films.info
+# Android client for web service with films info
 
 ## Description  
 This app shows info about any good films that have been shot in the history of cinema.
